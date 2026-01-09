@@ -1,9 +1,4 @@
 
----
-
-## 📄 **10. `package.json`** (для Render)
-
-```json
 {
   "name": "absgram",
   "version": "1.0.0",
