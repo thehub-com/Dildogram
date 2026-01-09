@@ -1,6 +1,6 @@
 // config.js - Конфигурация Absgram
 
-const CONFIG = {
+const ABSGRAM_CONFIG = {
     // Supabase конфигурация
     supabase: {
         url: "https://zdmtwnvaksdbvutrpcnr.supabase.co",
@@ -11,7 +11,7 @@ const CONFIG = {
     app: {
         name: "Absgram",
         version: "1.0.0",
-        siteUrl: window.location.origin,
+        siteUrl: "https://absgram.onrender.com", // ЗАМЕНИТЕ на ваш URL
         colors: {
             primary: "#FF9800",
             primaryDark: "#F57C00",
@@ -29,9 +29,18 @@ const CONFIG = {
             usernameLength: 20,
             searchResults: 15
         }
+    },
+    
+    // Фичи
+    features: {
+        magicLink: true,
+        realtime: true,
+        groups: true,
+        editing: true,
+        onlineStatus: true
     }
 };
 
 // Экспорт для использования
-window.CONFIG = CONFIG;
-console.log('✅ Конфигурация Absgram загружена:', CONFIG.app.name, 'v' + CONFIG.app.version);
+window.ABSGRAM_CONFIG = ABSGRAM_CONFIG;
+console.log('✅ Конфигурация Absgram загружена:', ABSGRAM_CONFIG.app.name);
