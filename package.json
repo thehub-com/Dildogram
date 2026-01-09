@@ -1,0 +1,34 @@
+
+---
+
+## 📄 **10. `package.json`** (для Render)
+
+```json
+{
+  "name": "absgram",
+  "version": "1.0.0",
+  "description": "Безопасный мессенджер с оранжевым стилем",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Запуск Absgram...' && npx serve .",
+    "build": "echo 'Build not required for static site'",
+    "test": "echo 'No tests yet'",
+    "deploy": "echo 'Push to GitHub for Render deployment'",
+    "dev": "npx live-server . --port=3000"
+  },
+  "keywords": [
+    "messenger",
+    "pwa",
+    "supabase",
+    "chat",
+    "real-time"
+  ],
+  "author": "Absgram Company",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
